@@ -1,0 +1,47 @@
+//////
+/////   Sva imena i komentari na engleskom
+/////
+
+
+
+***** Instrukcije za koriscenje ******
+1. skinuti git, node.js, vscode i koala compiler
+2. po instalaciji git-a i node.js-a uci pokrenuti terminal u direktorijumu sajta
+3. run komandu u terminalu: npm install -g http-server
+4. run komandu : http-server
+5. u browser-u uci na url: localhost:8080
+
+
+
+// js class-e
+--- vise o ovome posle, sad nemamo toliko css-a i html-a
+
+
+//variable
+
+
+
+Ako je boolean, sadrzi has is ili slican prefiks
+isFree
+isSelected
+hasIndex
+
+
+//funkcije
+
+***** Ime koje govori sta funkcija radi moze da znaci vise nego komentar *****
+*** Koristi kratke ali tacne komentare ***
+*** Imenuj parametre po tome kakve vrednosti nose ***
+***(npr. user bi bio objekat {username: someone, password: somepass}) ***
+*** Ili slicno ***
+*** Write reuseable code, we want to avoid adding more spagetti ***
+*** 3 kratke funkcije >>> 1 dugacke ***
+
+//js
+***** boyscout code rule: leave code bettern then when you found it *****
+
+
+//css class-e
+
+--- vise o ovome posle, sad nemamo toliko css-a i html-a
+
