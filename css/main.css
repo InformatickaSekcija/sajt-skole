@@ -27,7 +27,7 @@
 }
 .full-screen .notification-holder .notification-search input {
   width: 100%;
-  padding: 5px 10px;
+  padding: 5px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   outline: 0;
   border: 0;
@@ -60,6 +60,65 @@
 .full-screen .notification-holder .notification-wrapper .notification-container a:hover {
   color: #007258;
   text-decoration: underline;
+}
+.full-screen .latest-holder {
+  flex: 0 1 100%;
+  max-width: 70%;
+  height: 90%;
+  margin: auto;
+}
+.full-screen .latest-holder .latest-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  overflow-x: scroll;
+}
+.full-screen .latest-holder .latest-wrapper .wrapper-spliter {
+  height: calc(50% - 10px);
+  margin: 0;
+  display: flex;
+  margin: 10px;
+  justify-content: space-between;
+  align-content: center;
+}
+.latest-container {
+  height: 90%;
+  width: calc(35vw - 30px);
+  margin: auto 10px;
+  overflow: hidden;
+  background-color: #f7f7f7;
+  border-radius: 15px;
+}
+.latest-container .latest-image {
+  height: 45%;
+  width: 100%;
+  overflow: hidden;
+}
+.latest-container .latest-info {
+  overflow: hidden;
+  text-align: center;
+  padding: 0 10px 5px;
+}
+.latest-container .latest-info .latest-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.latest-container .latest-info .latest-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-align: justify;
+}
+.latest-container .latest-info .read-more {
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 body {
   margin: 0;

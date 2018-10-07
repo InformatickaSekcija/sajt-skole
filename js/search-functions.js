@@ -1,22 +1,19 @@
 function searchNotifications(element) {
     //emptys all notification
     $('.notification-wrapper').empty();
-    // If search text isnt empty, it will append a notification for
-    // each element that contains search string in title
+    // If search text isnt empty, it will find notifications includeing text
     if (element.value != '') {
         notifications.searchByAttribute('title', element.value).forEach(function (data) {
-            $('.notification-wrapper').append(returnNotificationsTemplate(data))
+            appendNotificationTemplate($('.notification-wrapper'), data)
         })
     }
     // If search text is empty, it will append all notifications
     else {
         notifications.forEach(function (data) {
-            $('.notification-wrapper').append(returnNotificationsTemplate(data))
+            appendNotificationTemplate($('.notification-wrapper'), data)
         })
     }
 }
-
-
 
 
 // Returns array of all objects that contain text(param)
@@ -24,7 +21,7 @@ function searchNotifications(element) {
 Array.prototype.searchByAttribute = function (attribute, text) {
     var newArray = []
     this.forEach(function (data) {
-        if (data[attribute].includes(text)) {
+        if (data[attribute].toLowerCase().includes(text.toLowerCase())) {
             newArray.push(data)
         }
     })
